@@ -1,0 +1,39 @@
+.all-movies{
+    overflow-x: auto;
+    height: 800px;
+    white-space: nowrap;
+}
+.movies{
+    display: inline-flex;
+    position: relative;
+    transition: transform 0.2s;
+    margin: 20px;
+}
+.title{
+    display: inline-block;
+}
+.movies:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.movies:hover .overlay{
+    opacity: 1;
+  
+}
+.overlay{
+    position:absolute;
+    background: rgba(0,0,0,0.8);
+    width:100%;
+    transition:0.5s ease;
+    opacity: 0;
+    bottom: 0;
+    color: azure;
+    text-align: center;
+    font-size: 18px;
+    
+}
+.all-favourites{
+    overflow-x: auto;
+    height: 800px;
+    white-space: nowrap;
+}
